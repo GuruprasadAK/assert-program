@@ -1,45 +1,16 @@
-# include <assert.h>
-# include "op.h"
-int call_add();
-int call_sub();
-int call_mul();
-int call_div();
+#include <assert.h>
+#include "day1.h"
+
 int main()
 {
-     call_add();
-     call_sub();
-     call_mul();
-     call_div();
-     return 0;
-}
- int call_add()
- {
- assert( add(5,6)== 11);
- assert(add(5,7)== 12);
- assert(add(-5,6)== 1 );
- assert(add(-5,-6)== INVALID);// for addition function
- return 0;
- }
 
- int call_sub()
- {
- assert( sub(5,6)== INVALID);
- assert(sub(5,7)== INVALID);// for subtraction function
- assert(sub(-5,6)== INVALID );
-assert(sub(5,10)== INVALID);
- return 0;
-
- }
- int call_div()
- {
- assert(div(2,0)== INVALID );// for division
- assert(div(10,5)== 2);
- return 0;
- }
-
- int call_mul()
- {
-  assert(mul(0,6)== INVALID );// for multiplication
- assert(mul(5,10)== 50);
-return 0;
+    assert(convert_upper_to_lower('A')== 0);
+    assert(area_of_circle(4) == 0);
+    assert (simple_interest(100,2.2,2)== 0);
+    assert( compound_interest(100,2.2,2) == 0);
+    assert(Celsius_to_Fahrenheit(100)== 0);
+    assert(Fahrenheit_to_Celsius(100)== 0);
+    assert(even_or_odd(5) == 0);
+    assert( number_is_leap_or_not(2012) == 0);
+        return 0;
 }
