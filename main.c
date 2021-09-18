@@ -1,16 +1,19 @@
 #include <assert.h>
-#include "day1.h"
+#include "day2.h"
 
 int main()
 {
-
-    assert(convert_upper_to_lower('A')== 0);
-    assert(area_of_circle(4) == 0);
-    assert (simple_interest(100,2.2,2)== 0);
-    assert( compound_interest(100,2.2,2) == 0);
-    assert(Celsius_to_Fahrenheit(100)== 0);
-    assert(Fahrenheit_to_Celsius(100)== 0);
-    assert(even_or_odd(5) == 0);
-    assert( number_is_leap_or_not(2012) == 0);
-        return 0;
+    assert(sum_of_digit(11)==0);
+    assert(reverse_digit(1234 )== 4321);
+    assert(occurrence_of_number(1222 ,2) == 0);
+    assert(palindrome_or_not(1441)== 0);
+    assert(prime_number_up_to_limit(5)==  0);
+     assert(prime_number(23)== 1);
+     assert(find_sum_series(4) == 0);
+     assert(checkForArmstrong(153) == 0);
+    assert(areAmicable(220,284) == 0);
+    assert (sum_difference_product(11, 11)==0);
+    assert (volume_of_shape(1,2,3,1,4)==0);
+    assert(unit_price(305)==0);
+    return 0;
 }
